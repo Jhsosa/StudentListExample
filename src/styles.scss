@@ -1,0 +1,127 @@
+body {
+  font-style: normal;
+  white-space: nowrap;
+}
+.wrapper {
+  position: absolute;
+  background: #efefef;
+  display: block;
+  height: 100vh;
+  width: 100vw;
+  color: black;
+}
+.list-wrapper {
+  position: absolute;
+  background: white;
+  height: 80vh;
+  width: 50vw;
+  max-height: 80vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 0.75em;
+  box-shadow: 0 0.2em 0.2em 0.1em rgba(0, 0, 0, 0.15);
+  overflow: auto;
+  scrollbar-width: none; // Firefox
+  -ms-overflow-style: none; // IE 10+
+  input {
+    position: relative;
+    display: block;
+    width: 96%;
+    left: 0;
+    right: 0;
+    margin: 0.5em 2%;
+    font-size: 1.5em;
+    border: none;
+    border-bottom: 0.1em solid rgba(0, 0, 0, 0.05);
+  }
+  input:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    border-bottom: 0.1em solid rgba(0, 0, 0, 0.25);
+  }
+}
+.list-wrapper::-webkit-scrollbar {
+  display: none; // Safari and Chrome
+}
+.list {
+  position: relative;
+}
+.list-item {
+  position: relative;
+  border-bottom: 0.2em solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  color: grey;
+  h1 {
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding-bottom: 0.5em;
+  }
+  p {
+    padding-left: 1em;
+    line-height: 1.25em;
+  }
+  .list-item-expand {
+    position: absolute;
+    display: inline-block;
+    background: transparent;
+    height: 1em;
+    width: 1em;
+    border: none;
+    font-size: 3em;
+    top: 0.25em;
+    right: 0.5em;
+    color: grey;
+    cursor: pointer;
+  }
+  .list-item-expand:focus {
+    outline: none;
+    border: none;
+  }
+  .list-item-grades {
+    position: relative;
+    padding-top: 1em;
+    display: block;
+  }
+  .list-item-image {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+    border-color: rgba(0, 0, 0, 0.05);
+    border-width: 0.2em;
+    border-style: solid;
+    height: 10em;
+    width: auto;
+    overflow: hidden;
+    margin: 1em;
+  }
+  .list-item-data {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: auto;
+    margin: 1em;
+  }
+  .tag-box {
+    position: relative;
+  }
+  .tag {
+    position: relative;
+    background: #dddcdd;
+    display: inline-block;
+    border-radius: 0.25em;
+    width: auto;
+    color: black;
+    margin: 0.25em;
+    padding: 0.5em;
+    vertical-align: middle;
+    text-align: center;
+  }
+}
