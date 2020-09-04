@@ -28,7 +28,7 @@
     "hammerjs": "^2.0.8",
     "jquery-ui-touch-punch": "^0.2.3",
     "jquery.transit": "^0.9.12",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "postcss-loader": "^3.0.0",
     "prettier": "^1.18.2",
     "raw-loader": "^3.0.0",
